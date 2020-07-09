@@ -10,7 +10,7 @@
 public class Test_Employees {
 
     public static void main (String [] args) {
-    	Employee emp1 = new Employee("J.chong", 4000.00);
+    	Employee emp1 = new Employee("J.chong", 10000.00);
     	Employee emp2 = new Employee("Xiao hong");
     	emp2.setSalary(4600.00);
     	
@@ -19,13 +19,14 @@ public class Test_Employees {
    		System.out.println("Salary (new): " + emp1.getSalary());
     	
     	if(emp1.getSalary()>emp2.getSalary()){
-            System.out.println("name: " + emp1.getName());
-    		System.out.println("salary: " + emp1.getSalary());
+            System.out.println("name: " + emp1.getName()+ " salary: " + emp1.getSalary());
         }
         else{
-            System.out.println("name: " + emp2.getName());
-	    	System.out.println("salary: " + emp2.getSalary());
+            System.out.println("name: " + emp2.getName()+ "salary: " + emp2.getSalary());
         }
+        
+        System.out.println("Total Salary: " + (emp1.getSalary()+emp2.getSalary()));
+        
     }
     
     
